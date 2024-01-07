@@ -7,6 +7,10 @@ import cors from 'cors'
 
 const app = express()
 
+app.get('/', (req, res) => {
+    res.json('Hola mundo')
+})
+
 app.use(cors({
     origin: 'https://task-manager-alpha-brown.vercel.app/',
     credentials: true
