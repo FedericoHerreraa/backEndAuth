@@ -12,8 +12,7 @@ app.get('/', (req, res) => {
 })
 
 app.use(cors({
-    origin: 'https://task-manager-alpha-brown.vercel.app/',
-    credentials: true
+    origin: '*'
 }))
 app.use(morgan('dev'))
 app.use(express.json())
