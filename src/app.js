@@ -8,7 +8,6 @@ import cors from 'cors'
 const app = express()
 
 app.use(cors({
-    origin: 'https://task-manager-alpha-brown.vercel.app/',
     credentials: true
 }))
 app.use(morgan('dev'))
