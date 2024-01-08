@@ -15,7 +15,6 @@ app.get('/', (req, res) => {
 
 app.use(cors({
     origin: '*',
-    credentials: true
 }))
 app.use(cookieParser())
 app.use(morgan('dev'))
