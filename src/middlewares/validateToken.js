@@ -14,5 +14,4 @@ export const authRequire = (req, res, next) => {
         req.user = user
         next()
     })
-
 }
