@@ -13,9 +13,7 @@ app.get('/', (req, res) => {
 })
 
 
-app.use(cors({
-    origin: '*',
-}))
+app.use(cors())
 app.use(cookieParser())
 app.use(morgan('dev'))
 app.use(express.json())
