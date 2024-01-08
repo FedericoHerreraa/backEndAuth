@@ -1,10 +1,10 @@
 import mongoose from "mongoose";
+import { MONGODB_URI } from "./config.js";
 
-const url = 'mongodb+srv://fedeherrera:4AYz4ktX1Bt9SsFI@cluster0.vgw0ujb.mongodb.net/?retryWrites=true&w=majority'
+const url = MONGODB_URI
 
 export const connectDB = async () => {
     try {
-        console.log('hola')
         await mongoose.connect(url)
         console.log('Se conecto con la base de datos')
     } catch (error) {
