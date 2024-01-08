@@ -12,8 +12,9 @@ app.get('/', (req, res) => {
     res.json('Hola mundo')
 })
 
-
-app.use(cors())
+app.use(cors({
+    origin: 'https://frontendtaskmanager.vercel.app'
+}))
 app.use(cookieParser())
 app.use(morgan('dev'))
 app.use(express.json())
