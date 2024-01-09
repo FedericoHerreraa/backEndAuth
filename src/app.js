@@ -13,7 +13,8 @@ app.get('/', (req, res) => {
 })
 
 app.use(cors({
-    origin: 'https://frontendtaskmanager.vercel.app'
+    origin: 'https://frontendtaskmanager.vercel.app',
+    credentials: true
 }))
 app.use(cookieParser())
 app.use(morgan('dev'))
