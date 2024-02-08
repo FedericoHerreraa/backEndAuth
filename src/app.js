@@ -7,7 +7,6 @@ import cors from 'cors'
 
 const app = express()
 
-
 app.get('/', (req, res) => {
     res.json('Hola mundo')
 })
@@ -19,7 +18,8 @@ app.use(cors({
 app.use(cookieParser())
 app.use(morgan('dev'))
 app.use(express.json())
-//comentario
+
+
 app.use('/api', authRoutes)
 app.use('/api', taskRoutes)
 
